@@ -11,5 +11,6 @@ public class Area{
         System.out.println(area);
         System.out.print("circumference = ");
         System.out.println(cir);
+        sc.close();
     }
 }
