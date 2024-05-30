@@ -13,5 +13,6 @@ public class inputfromuser{
         System.out.println(sum);
         int mult = a*b;
         System.out.println(mult);
+        sc.close();
     }
 }
