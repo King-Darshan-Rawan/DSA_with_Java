@@ -37,6 +37,6 @@ public class practceQuestions {
         System.out.print("You have done Shoping of rupees = ");
         System.out.println(price);
         System.out.println("ThankYou");
-
+        sc.close();
     }
 }
