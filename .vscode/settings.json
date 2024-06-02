@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "3.ConditionalStatement",
         "1.Veriables",
-        "3.ConditionalStatement"
+        "4.loops"
     ]
 }
