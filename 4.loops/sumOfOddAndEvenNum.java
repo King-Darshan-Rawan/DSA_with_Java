@@ -19,5 +19,6 @@ public class sumOfOddAndEvenNum {
         }
         System.out.println("The sum of even numbers = " + sumEven);
         System.out.println("The sum of odd numbers = " + sumOdd);
+        sc.close();
     }
 }
