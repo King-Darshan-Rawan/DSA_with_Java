@@ -11,6 +11,7 @@ public class skipTen {
                 continue;
             }
             System.out.println(" " + n);
+            sc.close();
         } while (true);
         
     }
