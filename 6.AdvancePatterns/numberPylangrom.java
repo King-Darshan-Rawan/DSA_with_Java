@@ -17,5 +17,6 @@ public class numberPylangrom {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
