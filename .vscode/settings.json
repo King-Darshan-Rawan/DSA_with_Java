@@ -1,9 +1,10 @@
 {
     "java.project.sourcePaths": [
+        "6.AdvancePatterns",
         "5.Patterns",
         "4.loops",
         "3.ConditionalStatement",
         "1.Veriables",
-        "6.AdvancePatterns"
+        "7.Functions"
     ]
 }
