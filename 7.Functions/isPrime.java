@@ -8,6 +8,10 @@ public class isPrime {
                 p = false;
                 break;
             }
+            else if (n == 2) {
+                p = true;
+                break;
+            }
         }
         return p;
     }
