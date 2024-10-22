@@ -1,9 +1,97 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+// README at: https://github.com/devcontainers/templates/tree/main/src/alpine
 {
-	"name": "Node.js",
+	"name": "Alpine",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm"
+	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"installGradle": true,
+			"installMaven": true,
+			"installAnt": true,
+			"installGroovy": true,
+			"version": "latest",
+			"jdkDistro": "ms",
+			"gradleVersion": "latest",
+			"mavenVersion": "latest",
+			"antVersion": "latest",
+			"groovyVersion": "latest"
+		},
+		"ghcr.io/mikaello/devcontainer-features/kotlinc:1": {},
+		"ghcr.io/devcontainers-extra/features/activemq-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "oracle"
+		},
+		"ghcr.io/devcontainers-extra/features/ant-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "oracle"
+		},
+		"ghcr.io/devcontainers-extra/features/btrace-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-extra/features/grails-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-extra/features/jbake-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-extra/features/jmc-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-extra/features/jreleaser-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-extra/features/layrry-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-extra/features/quarkus-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-extra/features/sbt-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-extra/features/asciidoctorj-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-extra/features/graalvm-asdf:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/jbang-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		},
+		"ghcr.io/devcontainers-extra/features/jmeter-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "17",
+			"jdkDistro": "oracle"
+		},
+		"ghcr.io/devcontainers-extra/features/joern-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "latest",
+			"jdkDistro": "ms"
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -12,7 +100,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	// "postCreateCommand": "uname -a",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
