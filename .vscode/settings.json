@@ -1,10 +1,11 @@
 {
     "java.project.sourcePaths": [
+        "7.Functions",
         "6.AdvancePatterns",
         "5.Patterns",
         "4.loops",
         "3.ConditionalStatement",
         "1.Veriables",
-        "7.Functions"
+        "NPTLE_FINAL_EXAMS/Loop and patterns"
     ]
 }
