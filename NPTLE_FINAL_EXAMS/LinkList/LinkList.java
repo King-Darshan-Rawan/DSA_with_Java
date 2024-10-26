@@ -87,6 +87,19 @@ public class LinkList {
         temp.next = newNode;
     }
 
+    public void Linearsearch(int key){
+        int i = 0;
+        Node temp = head;
+        while(temp != null){
+            i++;
+            if(temp.data == key){
+                System.err.println("The var is at poss = " + i);
+                return;
+            }
+            temp = temp.next;
+        }
+        System.out.println("The var isnt in the list");
+    }
     public static void main(String[] args) {
         LinkList list = new LinkList();
         list.print();
@@ -105,14 +118,14 @@ public class LinkList {
         list.add(2,7);
         list.print();
         // System.out.println(list);
-        System.out.println(list.size);
-        list.print();
-        list.removeLast();
-        list.print();
-        System.out.println(list.size);
-        list.removeFirst();
-        list.print();
-        System.out.println(list.size);
-
+        // System.out.println(list.size);
+        // list.print();
+        // list.removeLast();
+        // list.print();
+        // System.out.println(list.size);
+        // list.removeFirst();
+        // list.print();
+        // System.out.println(list.size);
+        list.Linearsearch(7);
     }
 }
